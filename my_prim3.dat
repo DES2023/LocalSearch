@@ -1,0 +1,47 @@
+Example n3 from Ancelin
+definition ;
+places     ;
+       1:* ;
+       2:10;
+       3:20;
+       4:20;
+       5:* ;
+transitions;
+1:40,3     ;
+2:20,8     ;
+3:50,10    ;
+4:70,1     ;
+end        ;
+connect    ;
+enters     ;
+t1<=p1:10  ;
+t2<=p2:8   ;
+t3<=p3:9   ;
+t4<=p4:11  ;
+exits      ;
+t1=>p2:10  ;
+t2=>p3:8   ;
+t3=>p4:9   ;
+t4=>p5:11  ;
+end        ;
+end.
+costs of parts in buffers
+5
+1 1.1 1.21 1.331 1.4641 
+revenue per item
+pl 3
+0 -10000 0
+0.04444 0.0845 1.9033
+0.08 0.1521 0
+inventory cost coefficient
+0.001
+amortization period
+7000
+buffer space allocation cost
+pl 1
+0 0 10
+
+maximal production rate = 0.08879
+
+
+

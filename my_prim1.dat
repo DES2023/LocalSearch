@@ -1,0 +1,51 @@
+í•¿¡Æ¢ © Øﬁ®¨•ﬁ n1 ®ß ﬁ °Æ¡  Ancelin
+definition;
+places;
+1:*;
+2:20;
+3:17;
+4:30;
+5:48;
+6:*;
+transitions;
+1:100,15;
+2:200,30;
+3:50,7.5;
+4:400,60;
+5:300,45;
+end;
+connect;
+enters;
+t1<=p1:1;
+t2<=p2:1;
+t3<=p3:1;
+t4<=p4:1;
+t5<=p5:1;
+exits;
+t1=>p2:1;
+t2=>p3:1;
+t3=>p4:1;
+t4=>p5:1;
+t5=>p6:1;
+end;
+end.
+costs of parts in buffers
+6
+1 1.1 1.21 1.331 1.4641 1.61051
+revenue per item
+pl 3
+0 0 0
+0.3445 0.655697 1.90333
+0.6201 1.311394 0
+inventory cost coefficient
+0.001
+amortization period
+7000
+buffer space allocation cost
+pl 1
+0 0 10
+solution list capacity
+0 0
+maximal production rate = 0.689
+
+

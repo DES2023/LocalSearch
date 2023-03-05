@@ -1,0 +1,68 @@
+Example n6
+definition;
+places;
+1:*   ;
+2:15 ;
+3:10 ;
+4:15 ;
+5:10 ;
+6:25 ;
+7:10 ;
+8:10 ;
+9:*;
+transitions      ;
+1:50,12       ;
+2:48,2        ;
+3:55,9         ;
+4:39,6          ;
+5:75,10           ;
+6:59,11            ;
+7:28,8             ;
+8:35,8              ;
+9:65,35   ;
+10:20,4   ;
+end;
+connect;
+        enters;
+t1<=p1:1;
+t2<=p2:3.45 ;
+t3<=p2:2.78  ;
+t4<=p2:3.03   ;
+t5<=p3:3.333     ;
+t6<=p4:2.56      ;
+t7<=p5:3.03       ;
+t8<=p7:3.125        ;
+t9<=p6:2.174        ;
+t10<=p8:0.8        ;
+exits;
+t1=>p2:1;
+t2=>p3:3.45 ;
+t3=>p4:2.78  ;
+t4=>p8:3.03   ;
+t5=>p5:3.333     ;
+t6=>p6:2.56      ;
+t7=>p7:3.03       ;
+t8=>p8:3.125        ;
+t9=>p8:2.174        ;
+t10=>p9:0.8        ;
+end;  
+end.
+costs of parts in buffers
+9
+1 1.1 1.21 1.21 1.331 1.331 1.4641 1.61051 1.771561  
+revenue per item
+pl 3
+0 0 0
+0.3629 0.9193 2.53333
+0.6531 1.65449823 0
+inventory cost coefficient
+0.001
+amortization period
+7000
+buffer space allocation cost
+pl 1
+0 0 10
+
+maximal production rate = 0.7257
+
+
